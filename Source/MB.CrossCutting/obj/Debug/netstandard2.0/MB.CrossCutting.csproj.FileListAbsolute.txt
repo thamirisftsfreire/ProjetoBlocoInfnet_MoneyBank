@@ -1,0 +1,5 @@
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet\Source\MoneyBank\MB.CrossCutting\bin\Debug\netstandard2.0\MB.CrossCutting.deps.json
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet\Source\MoneyBank\MB.CrossCutting\bin\Debug\netstandard2.0\MB.CrossCutting.dll
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet\Source\MoneyBank\MB.CrossCutting\obj\Debug\netstandard2.0\MB.CrossCutting.AssemblyInfoInputs.cache
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet\Source\MoneyBank\MB.CrossCutting\obj\Debug\netstandard2.0\MB.CrossCutting.AssemblyInfo.cs
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet\Source\MoneyBank\MB.CrossCutting\obj\Debug\netstandard2.0\MB.CrossCutting.csprojAssemblyReference.cache

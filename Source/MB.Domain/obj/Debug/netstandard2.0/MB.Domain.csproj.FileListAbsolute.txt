@@ -1,0 +1,8 @@
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet\Source\MoneyBank\MB.Domain\obj\Debug\netstandard2.0\MB.Domain.csprojAssemblyReference.cache
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet\Source\MoneyBank\MB.Domain\obj\Debug\netstandard2.0\MB.Domain.AssemblyInfoInputs.cache
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet\Source\MoneyBank\MB.Domain\obj\Debug\netstandard2.0\MB.Domain.AssemblyInfo.cs
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet\Source\MoneyBank\MB.Domain\bin\Debug\netstandard2.0\MB.Domain.deps.json
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet\Source\MoneyBank\MB.Domain\bin\Debug\netstandard2.0\MB.Domain.dll
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet\Source\MoneyBank\MB.Domain\bin\Debug\netstandard2.0\MB.Domain.pdb
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet\Source\MoneyBank\MB.Domain\obj\Debug\netstandard2.0\MB.Domain.dll
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet\Source\MoneyBank\MB.Domain\obj\Debug\netstandard2.0\MB.Domain.pdb
