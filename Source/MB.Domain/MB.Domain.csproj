@@ -5,11 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Aggregations\AccountAggregate\ObjectsValue\" />
-    <Folder Include="Aggregations\ATMAggregate\Entities\" />
-    <Folder Include="Aggregations\ATMAggregate\Services\" />
-    <Folder Include="Aggregations\ATMAggregate\Validations\" />
-    <Folder Include="Interfaces\Services\" />
+    <Folder Include="Aggregations\AccountAggregate\Interfaces\Services\" />
   </ItemGroup>
 
 </Project>
