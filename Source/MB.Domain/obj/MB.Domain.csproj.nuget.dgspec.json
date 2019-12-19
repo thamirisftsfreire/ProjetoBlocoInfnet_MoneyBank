@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vtham\\OneDrive\\Área de Trabalho\\ProjetoBlocoInfnet\\Source\\MoneyBank\\MB.Domain\\MB.Domain.csproj": {}
+    "C:\\Users\\vtham\\OneDrive\\Área de Trabalho\\ProjetoBlocoInfnet_MoneyBank\\Source\\MB.Domain\\MB.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vtham\\OneDrive\\Área de Trabalho\\ProjetoBlocoInfnet\\Source\\MoneyBank\\MB.Domain\\MB.Domain.csproj": {
+    "C:\\Users\\vtham\\OneDrive\\Área de Trabalho\\ProjetoBlocoInfnet_MoneyBank\\Source\\MB.Domain\\MB.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vtham\\OneDrive\\Área de Trabalho\\ProjetoBlocoInfnet\\Source\\MoneyBank\\MB.Domain\\MB.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\vtham\\OneDrive\\Área de Trabalho\\ProjetoBlocoInfnet_MoneyBank\\Source\\MB.Domain\\MB.Domain.csproj",
         "projectName": "MB.Domain",
-        "projectPath": "C:\\Users\\vtham\\OneDrive\\Área de Trabalho\\ProjetoBlocoInfnet\\Source\\MoneyBank\\MB.Domain\\MB.Domain.csproj",
+        "projectPath": "C:\\Users\\vtham\\OneDrive\\Área de Trabalho\\ProjetoBlocoInfnet_MoneyBank\\Source\\MB.Domain\\MB.Domain.csproj",
         "packagesPath": "C:\\Users\\vtham\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vtham\\OneDrive\\Área de Trabalho\\ProjetoBlocoInfnet\\Source\\MoneyBank\\MB.Domain\\obj\\",
+        "outputPath": "C:\\Users\\vtham\\OneDrive\\Área de Trabalho\\ProjetoBlocoInfnet_MoneyBank\\Source\\MB.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

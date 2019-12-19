@@ -6,6 +6,9 @@ namespace MB.Domain.Aggregations.ATMAggregate.Specifications
 {
     public class WithdrawalMustBeLessThanAvailableCashDispenser
     {
-        public Boolean IsSufficientCashAvailable(decimal amount) { return true; }
+        public bool IsSatisfiedBy(Decimal withdrawalAmount, Decimal _cashDispenser)
+        {
+            return withdrawalAmount <= _cashDispenser;
+        }
     }
 }

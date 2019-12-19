@@ -186,11 +186,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vtham\\OneDrive\\Área de Trabalho\\ProjetoBlocoInfnet\\Source\\MoneyBank\\MB.Application\\MB.Application.csproj",
+      "projectUniqueName": "C:\\Users\\vtham\\OneDrive\\Área de Trabalho\\ProjetoBlocoInfnet_MoneyBank\\Source\\MB.Application\\MB.Application.csproj",
       "projectName": "MB.Application",
-      "projectPath": "C:\\Users\\vtham\\OneDrive\\Área de Trabalho\\ProjetoBlocoInfnet\\Source\\MoneyBank\\MB.Application\\MB.Application.csproj",
+      "projectPath": "C:\\Users\\vtham\\OneDrive\\Área de Trabalho\\ProjetoBlocoInfnet_MoneyBank\\Source\\MB.Application\\MB.Application.csproj",
       "packagesPath": "C:\\Users\\vtham\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vtham\\OneDrive\\Área de Trabalho\\ProjetoBlocoInfnet\\Source\\MoneyBank\\MB.Application\\obj\\",
+      "outputPath": "C:\\Users\\vtham\\OneDrive\\Área de Trabalho\\ProjetoBlocoInfnet_MoneyBank\\Source\\MB.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

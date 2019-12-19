@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace MB.Data.Repository
 {
-    public class Repository<TEntity> : IRepository<TEntity>, IDisposable where TEntity : EntityBase<Guid>
+    public class Repository<TEntity> : IRepository<TEntity>, IDisposable where TEntity : BaseEntity<int>
     {
         protected MoneyBankContext Ctx { get; }
         protected DbSet<TEntity> Set { get; }
@@ -23,12 +23,10 @@ namespace MB.Data.Repository
         }
         public virtual async Task<TEntity> AddAsync(TEntity tEntity)
         {
-            if (tEntity.Id == Guid.Empty)
-                tEntity.Id = Guid.NewGuid();
             var entity = await Set.AddAsync(tEntity);
             return entity.Entity;
         }
-        public virtual async Task<TEntity> FindAsync(Guid id)
+        public virtual async Task<TEntity> FindAsync(int id)
         {
             return await Set.FindAsync(id);
         }
@@ -52,7 +50,7 @@ namespace MB.Data.Repository
             Set.Remove(tEntity);
         }
 
-        public virtual async Task RemoveAsync(Guid id)
+        public virtual async Task RemoveAsync(int id)
         {
             Set.Remove(await Set.FindAsync(id));
         }

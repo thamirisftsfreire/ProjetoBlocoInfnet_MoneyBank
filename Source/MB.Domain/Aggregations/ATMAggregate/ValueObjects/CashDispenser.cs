@@ -15,11 +15,18 @@ namespace MB.Domain.Aggregations.ATMAggregate.ValueObjects
             BillCount = INITIAL_COUNT;
         }
 
-        public Boolean DispenseCash(decimal amount) { return true; }
+        public Boolean DispenseCash(decimal amount) 
+        {
+            if (!IsSufficientCashAvailable(amount))
+                return false;
+
+            BillCount = BillCount - amount;
+            return true;
+        }
 
         public bool IsSufficientCashAvailable(decimal amount)
         {
-            return new WithdrawalMustBeLessThanAvailableCashDispenser().IsSufficientCashAvailable(amount);
+            return new WithdrawalMustBeLessThanAvailableCashDispenser().IsSatisfiedBy(amount, BillCount);
         }
 
     }

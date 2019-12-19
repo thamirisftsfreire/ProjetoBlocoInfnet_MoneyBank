@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MB.Domain
 {
-    public abstract class EntityBase<EntityId>
+    public abstract class BaseEntity<EntityId>
     {
         public EntityId Id { get; set; }
     }

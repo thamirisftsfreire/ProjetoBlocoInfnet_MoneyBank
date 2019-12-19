@@ -17,6 +17,8 @@ namespace MB.Data.EntityConfig
                 .HasOne(x => x.Client)
                 .WithOne(x => x.Account)
                 .HasForeignKey<Client>(x => x.Id);
+
+            builder.Ignore(x => x.AvailableBalance);
         }
     }
 }

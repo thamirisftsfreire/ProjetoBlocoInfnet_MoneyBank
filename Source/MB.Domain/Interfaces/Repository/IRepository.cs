@@ -5,13 +5,13 @@ using System.Threading.Tasks;
 
 namespace MB.Domain.Interfaces.Repository
 {
-    public interface IRepository<TEntity> where TEntity : EntityBase<Guid>
+    public interface IRepository<TEntity> where TEntity : BaseEntity<int>
     {
         Task<TEntity> AddAsync(TEntity tEntity);
-        Task<TEntity> FindAsync(Guid id);
+        Task<TEntity> FindAsync(int id);
         Task<IEnumerable<TEntity>> GetAllAsNoTrackingAsync();
         TEntity Update(TEntity tEntity);
-        Task RemoveAsync(Guid id);
+        Task RemoveAsync(int id);
         void Remove(TEntity tEntity);
         int SaveChanges();
     }
