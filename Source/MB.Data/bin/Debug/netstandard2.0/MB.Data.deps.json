@@ -1332,8 +1332,20 @@
         }
       },
       "MB.Domain/1.0.0": {
+        "dependencies": {
+          "MB.CrossCutting.Tools": "1.0.0",
+          "MB.Tools": "1.0.0.0"
+        },
         "runtime": {
           "MB.Domain.dll": {}
+        }
+      },
+      "MB.Tools.Reference/1.0.0.0": {
+        "runtime": {
+          "MB.Tools.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
@@ -2186,6 +2198,11 @@
     },
     "MB.Domain/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MB.Tools.Reference/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

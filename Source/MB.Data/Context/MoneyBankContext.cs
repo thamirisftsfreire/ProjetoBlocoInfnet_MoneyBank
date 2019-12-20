@@ -1,5 +1,5 @@
 ﻿using MB.Data.EntityConfig;
-using MB.Domain.Aggregations.AccountAggregate.Entities;
+using MB.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.Extensions.Configuration;

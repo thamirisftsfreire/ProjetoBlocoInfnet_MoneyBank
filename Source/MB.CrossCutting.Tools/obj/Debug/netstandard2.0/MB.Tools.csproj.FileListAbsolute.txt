@@ -1,0 +1,8 @@
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet_MoneyBank\Source\MB.Tools\bin\Debug\netstandard2.0\MB.Tools.deps.json
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet_MoneyBank\Source\MB.Tools\bin\Debug\netstandard2.0\MB.Tools.dll
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet_MoneyBank\Source\MB.Tools\bin\Debug\netstandard2.0\MB.Tools.pdb
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet_MoneyBank\Source\MB.Tools\obj\Debug\netstandard2.0\MB.Tools.AssemblyInfoInputs.cache
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet_MoneyBank\Source\MB.Tools\obj\Debug\netstandard2.0\MB.Tools.AssemblyInfo.cs
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet_MoneyBank\Source\MB.Tools\obj\Debug\netstandard2.0\MB.Tools.dll
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet_MoneyBank\Source\MB.Tools\obj\Debug\netstandard2.0\MB.Tools.pdb
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet_MoneyBank\Source\MB.Tools\obj\Debug\netstandard2.0\MB.Tools.csprojAssemblyReference.cache

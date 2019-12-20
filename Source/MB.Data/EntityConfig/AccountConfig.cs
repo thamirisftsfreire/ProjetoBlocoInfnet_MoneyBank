@@ -1,9 +1,7 @@
-﻿using MB.Domain.Aggregations.AccountAggregate.Entities;
+﻿using MB.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using MB.Domain.ValueObjects;
 
 namespace MB.Data.EntityConfig
 {
@@ -18,7 +16,14 @@ namespace MB.Data.EntityConfig
                 .WithOne(x => x.Account)
                 .HasForeignKey<Client>(x => x.Id);
 
-            builder.Ignore(x => x.AvailableBalance);
+            builder
+                .HasBaseType<Account>()
+                .Property(transaction => transaction.TotalAmount)
+                .HasConversion(
+                    amount => amount.ToString(),
+                    amount => Amount.Parse(amount))
+                .HasColumnName("Amount");
+
         }
     }
 }

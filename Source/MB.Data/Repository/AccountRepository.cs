@@ -1,5 +1,5 @@
 ﻿using MB.Data.Context;
-using MB.Domain.Aggregations.AccountAggregate.Entities;
+using MB.Domain.Entities;
 using MB.Domain.Interfaces.Repository;
 using System;
 using System.Collections.Generic;
