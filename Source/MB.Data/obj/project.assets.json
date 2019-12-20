@@ -1791,22 +1791,9 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "MB.CrossCutting.Tools/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "compile": {
-          "bin/placeholder/MB.CrossCutting.Tools.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MB.CrossCutting.Tools.dll": {}
-        }
-      },
       "MB.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "MB.CrossCutting.Tools": "1.0.0"
-        },
         "compile": {
           "bin/placeholder/MB.Domain.dll": {}
         },
@@ -6469,11 +6456,6 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
-    },
-    "MB.CrossCutting.Tools/1.0.0": {
-      "type": "project",
-      "path": "../MB.CrossCutting.Tools/MB.CrossCutting.Tools.csproj",
-      "msbuildProject": "../MB.CrossCutting.Tools/MB.CrossCutting.Tools.csproj"
     },
     "MB.Domain/1.0.0": {
       "type": "project",

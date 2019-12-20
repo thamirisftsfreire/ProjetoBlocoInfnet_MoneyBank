@@ -1,5 +1,6 @@
 ﻿using MB.Domain.Entities;
 using MB.Domain.Interfaces.Repository;
+using MB.Domain.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -13,10 +14,10 @@ namespace MB.Domain.Specifications
         {
             _accountRepository = accountRepository;
         }
-        public bool IsSatisfiedBy(Account account, Decimal withdrawalAmount)
+        public bool IsSatisfiedBy(int accountNumber, Amount withdrawalAmount)
         {
-            var _account = _accountRepository.FindAsync(account.Id).Result;
-            return withdrawalAmount <= _account.TotalAmount.Value;
+            var _account = _accountRepository.FindAsync(accountNumber).Result;
+            return withdrawalAmount.Value <= _account.TotalAmount.Value;
         }
     }
 }

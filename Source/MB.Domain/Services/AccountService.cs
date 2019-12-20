@@ -12,7 +12,7 @@ namespace MB.Domain.Services
     public class AccountService : IAccountService
     {
         protected readonly IAccountRepository _accountRepository;
-        public AccountService(IAccountRepository accountRepository, Account account)
+        public AccountService(IAccountRepository accountRepository)
         {
             _accountRepository = accountRepository;
         }
@@ -20,19 +20,27 @@ namespace MB.Domain.Services
         /// Retorna o saldo disponível na conta.
         /// </summary>
         /// <returns></returns>
-        Decimal IAccountService.GetAvailableBalance(int accountId) 
+        Amount IAccountService.GetAvailableBalance(int accountId) 
         {
             var _account = _accountRepository.FindAsync(accountId).Result;
-            return _account.TotalAmount.Value; 
+
+            if (_account == null)
+                throw new Exception("Account not found!");
+
+            return new Amount("USD", _account.TotalAmount.Value);
         }
         /// <summary>
         /// Retorna o saldo total da conta
         /// </summary>
         /// <returns></returns>
-        Decimal IAccountService.GetTotalBalance(int accountId)
+        Amount IAccountService.GetTotalBalance(int accountId)
         {
             var _account = _accountRepository.FindAsync(accountId).Result;
-            return _account.TotalAmount.Value;
+
+            if (_account == null)
+                throw new Exception("Account not found!");
+
+            return new Amount("USD",_account.TotalAmount.Value);
         }
         /// <summary>
         /// Credita uma quantia na conta especificada
@@ -40,6 +48,10 @@ namespace MB.Domain.Services
         void IAccountService.Credit(int accountId, Decimal ValorCredito) 
         {
             var _account = _accountRepository.FindAsync(accountId).Result;
+            
+            if (_account == null)
+                throw new Exception("Account not found!");
+
             _account.TotalAmount = new Amount("USD", _account.TotalAmount.Value + ValorCredito);
             _accountRepository.Update(_account);
         }

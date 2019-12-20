@@ -8,7 +8,7 @@ namespace MB.Domain.Specifications
     {
         public bool IsSatisfiedBy(int pin)
         {
-            return pin.ToString().Length <= 5;
+            return pin.ToString().Length == 5;
         }
     }
 }

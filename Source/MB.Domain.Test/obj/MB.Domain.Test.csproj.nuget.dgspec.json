@@ -4,14 +4,14 @@
     "C:\\Users\\vtham\\OneDrive\\Área de Trabalho\\ProjetoBlocoInfnet_MoneyBank\\Source\\MB.Domain.Test\\MB.Domain.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vtham\\OneDrive\\Área de Trabalho\\ProjetoBlocoInfnet_MoneyBank\\Source\\MB.CrossCutting.Tools\\MB.CrossCutting.Tools.csproj": {
+    "C:\\Users\\vtham\\OneDrive\\Área de Trabalho\\ProjetoBlocoInfnet_MoneyBank\\Source\\MB.Data\\MB.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vtham\\OneDrive\\Área de Trabalho\\ProjetoBlocoInfnet_MoneyBank\\Source\\MB.CrossCutting.Tools\\MB.CrossCutting.Tools.csproj",
-        "projectName": "MB.CrossCutting.Tools",
-        "projectPath": "C:\\Users\\vtham\\OneDrive\\Área de Trabalho\\ProjetoBlocoInfnet_MoneyBank\\Source\\MB.CrossCutting.Tools\\MB.CrossCutting.Tools.csproj",
+        "projectUniqueName": "C:\\Users\\vtham\\OneDrive\\Área de Trabalho\\ProjetoBlocoInfnet_MoneyBank\\Source\\MB.Data\\MB.Data.csproj",
+        "projectName": "MB.Data",
+        "projectPath": "C:\\Users\\vtham\\OneDrive\\Área de Trabalho\\ProjetoBlocoInfnet_MoneyBank\\Source\\MB.Data\\MB.Data.csproj",
         "packagesPath": "C:\\Users\\vtham\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vtham\\OneDrive\\Área de Trabalho\\ProjetoBlocoInfnet_MoneyBank\\Source\\MB.CrossCutting.Tools\\obj\\",
+        "outputPath": "C:\\Users\\vtham\\OneDrive\\Área de Trabalho\\ProjetoBlocoInfnet_MoneyBank\\Source\\MB.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -30,7 +30,11 @@
         },
         "frameworks": {
           "netstandard2.0": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\vtham\\OneDrive\\Área de Trabalho\\ProjetoBlocoInfnet_MoneyBank\\Source\\MB.Domain\\MB.Domain.csproj": {
+                "projectPath": "C:\\Users\\vtham\\OneDrive\\Área de Trabalho\\ProjetoBlocoInfnet_MoneyBank\\Source\\MB.Domain\\MB.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -42,6 +46,26 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -90,6 +114,9 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
+              "C:\\Users\\vtham\\OneDrive\\Área de Trabalho\\ProjetoBlocoInfnet_MoneyBank\\Source\\MB.Data\\MB.Data.csproj": {
+                "projectPath": "C:\\Users\\vtham\\OneDrive\\Área de Trabalho\\ProjetoBlocoInfnet_MoneyBank\\Source\\MB.Data\\MB.Data.csproj"
+              },
               "C:\\Users\\vtham\\OneDrive\\Área de Trabalho\\ProjetoBlocoInfnet_MoneyBank\\Source\\MB.Domain\\MB.Domain.csproj": {
                 "projectPath": "C:\\Users\\vtham\\OneDrive\\Área de Trabalho\\ProjetoBlocoInfnet_MoneyBank\\Source\\MB.Domain\\MB.Domain.csproj"
               }
@@ -116,6 +143,10 @@
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.2.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.13.1, )"
             },
             "coverlet.collector": {
               "target": "Package",
@@ -181,11 +212,7 @@
         },
         "frameworks": {
           "netstandard2.0": {
-            "projectReferences": {
-              "C:\\Users\\vtham\\OneDrive\\Área de Trabalho\\ProjetoBlocoInfnet_MoneyBank\\Source\\MB.CrossCutting.Tools\\MB.CrossCutting.Tools.csproj": {
-                "projectPath": "C:\\Users\\vtham\\OneDrive\\Área de Trabalho\\ProjetoBlocoInfnet_MoneyBank\\Source\\MB.CrossCutting.Tools\\MB.CrossCutting.Tools.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {

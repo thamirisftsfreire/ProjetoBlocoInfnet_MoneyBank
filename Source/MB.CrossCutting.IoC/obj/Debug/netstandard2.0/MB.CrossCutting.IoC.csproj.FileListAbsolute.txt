@@ -1,0 +1,15 @@
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet_MoneyBank\Source\MB.CrossCutting.IoC\bin\Debug\netstandard2.0\MB.CrossCutting.IoC.deps.json
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet_MoneyBank\Source\MB.CrossCutting.IoC\bin\Debug\netstandard2.0\MB.CrossCutting.IoC.dll
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet_MoneyBank\Source\MB.CrossCutting.IoC\bin\Debug\netstandard2.0\MB.CrossCutting.IoC.pdb
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet_MoneyBank\Source\MB.CrossCutting.IoC\bin\Debug\netstandard2.0\MB.Application.dll
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet_MoneyBank\Source\MB.CrossCutting.IoC\bin\Debug\netstandard2.0\MB.Data.dll
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet_MoneyBank\Source\MB.CrossCutting.IoC\bin\Debug\netstandard2.0\MB.Domain.dll
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet_MoneyBank\Source\MB.CrossCutting.IoC\bin\Debug\netstandard2.0\MB.Application.pdb
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet_MoneyBank\Source\MB.CrossCutting.IoC\bin\Debug\netstandard2.0\MB.Data.pdb
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet_MoneyBank\Source\MB.CrossCutting.IoC\bin\Debug\netstandard2.0\MB.Domain.pdb
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet_MoneyBank\Source\MB.CrossCutting.IoC\obj\Debug\netstandard2.0\MB.CrossCutting.IoC.csprojAssemblyReference.cache
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet_MoneyBank\Source\MB.CrossCutting.IoC\obj\Debug\netstandard2.0\MB.CrossCutting.IoC.AssemblyInfoInputs.cache
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet_MoneyBank\Source\MB.CrossCutting.IoC\obj\Debug\netstandard2.0\MB.CrossCutting.IoC.AssemblyInfo.cs
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet_MoneyBank\Source\MB.CrossCutting.IoC\obj\Debug\netstandard2.0\MB.CrossCutting.IoC.csproj.CopyComplete
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet_MoneyBank\Source\MB.CrossCutting.IoC\obj\Debug\netstandard2.0\MB.CrossCutting.IoC.dll
+C:\Users\vtham\OneDrive\Área de Trabalho\ProjetoBlocoInfnet_MoneyBank\Source\MB.CrossCutting.IoC\obj\Debug\netstandard2.0\MB.CrossCutting.IoC.pdb

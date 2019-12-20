@@ -1,21 +1,20 @@
-﻿using MB.Domain.Aggregations.ATMAggregate.Specifications;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System;
+using MB.Domain.Specifications;
+using MB.Domain.ValueObjects;
 
 namespace MB.Application.ViewModels
 {
     public class CashDispenserViewModel
     {
-        private static Decimal INITIAL_COUNT = 500;
-        public Decimal BillCount { get; set; }
+        private static Amount INITIAL_COUNT = new Amount("USD", 500);
+        public Amount BillCount { get; set; }
 
         public CashDispenserViewModel()
         {
             BillCount = INITIAL_COUNT;
         }
 
-        public Boolean DispenseCash(decimal amount) 
+        public Boolean DispenseCash(Amount amount)
         {
             if (!IsSufficientCashAvailable(amount))
                 return false;
@@ -24,7 +23,7 @@ namespace MB.Application.ViewModels
             return true;
         }
 
-        public bool IsSufficientCashAvailable(decimal amount)
+        public bool IsSufficientCashAvailable(Amount amount)
         {
             return new WithdrawalMustBeLessThanAvailableCashDispenser().IsSatisfiedBy(amount, BillCount);
         }

@@ -8,7 +8,7 @@ namespace MB.Domain.Specifications
     {
         public bool IsSatisfiedBy(int accountNumber)
         {
-            return accountNumber.ToString().Length <= 5;
+            return accountNumber.ToString().Length == 5;
         }
     }
 }

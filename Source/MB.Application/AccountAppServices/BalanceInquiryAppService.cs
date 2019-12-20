@@ -4,6 +4,7 @@ using MB.Domain.Entities;
 using System;
 using MB.Application.Interfaces;
 using MB.Data.Interfaces;
+using MB.Domain.ValueObjects;
 
 namespace MB.Application.AccountAppServices
 {
@@ -20,7 +21,7 @@ namespace MB.Application.AccountAppServices
             _balanceInquiryService.Execute(accountNumber);
         }
 
-        public void Execute(int accountNumber, decimal amount)
+        public void Execute(int accountNumber, Amount amount)
         {
             
         }

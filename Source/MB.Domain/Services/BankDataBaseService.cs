@@ -9,8 +9,8 @@ namespace MB.Domain.Services
 {
     public class BankDataBaseService : AccountService, IBankDataBaseService
     {
-        public BankDataBaseService(IAccountRepository accountRepository, Account account)
-            : base(accountRepository, account)
+        public BankDataBaseService(IAccountRepository accountRepository)
+            : base(accountRepository)
         {
 
         }
