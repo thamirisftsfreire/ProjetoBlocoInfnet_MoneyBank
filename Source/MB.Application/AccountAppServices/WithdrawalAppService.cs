@@ -12,6 +12,7 @@ namespace MB.Application.AccountAppServices
     public class WithdrawalAppService : ApplicationService, IWithdrawalAppService
     {
         private readonly IWithdrawalService _withdrawalService;
+        private readonly ICashDispenserAppService _cashDispenserAppService;
         public WithdrawalAppService(IWithdrawalService withdrawalService, IUnitOfWork uow)
             : base(uow)
         {
@@ -20,7 +21,15 @@ namespace MB.Application.AccountAppServices
         public void Execute(int accountNumber, Amount amount)
         {
             BeginTransaction();
+
+            if (_cashDispenserAppService.IsSufficientCashAvailable(amount))
+                throw new Exception("Not enough money in the banknote dispenser.");
+            
             _withdrawalService.Execute(accountNumber, amount);
+
+            if(!_cashDispenserAppService.DispenseCash(amount))
+                throw new Exception();
+
             Commit();
         }
 

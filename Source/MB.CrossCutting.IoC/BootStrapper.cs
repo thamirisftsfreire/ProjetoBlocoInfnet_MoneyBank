@@ -11,7 +11,7 @@ using MB.Domain.Interfaces.Services;
 using MB.Domain.Services;
 using SimpleInjector;
 
-namespace MB.CrossCutting
+namespace MB.CrossCutting.IoC
 {
     public class BootStrapper
     {
