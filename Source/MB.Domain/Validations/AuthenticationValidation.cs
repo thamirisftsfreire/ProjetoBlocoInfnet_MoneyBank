@@ -12,6 +12,11 @@ namespace MB.Domain.Validations
         {
             _accountRepository = accountRepository;
         }
+        /// <summary>
+        /// UC001 – Autenticar Usuário
+        /// Fluxo de Exceção 01 - Número de Conta inválido ou PIN inválido
+        /// Repositório: \ProjetoBlocoInfnet_MoneyBank\Documentos\Caso_Uso
+        /// </summary>
         public bool IsSatisfiedBy(Account account)
         {
             var _account = _accountRepository.FindAsync(account.Id).Result;
@@ -24,9 +29,6 @@ namespace MB.Domain.Validations
 
             if (!new AccountMustBeFiveCharacters().IsSatisfiedBy(account.Id))
                 return false;
-
-            
-
 
             if (!new PINMustBeFiveCharacters().IsSatisfiedBy(account.PIN))
                 return false;

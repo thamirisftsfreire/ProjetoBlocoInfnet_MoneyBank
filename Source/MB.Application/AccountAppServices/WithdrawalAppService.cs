@@ -19,7 +19,9 @@ namespace MB.Application.AccountAppServices
         }
         public void Execute(int accountNumber, Amount amount)
         {
+            BeginTransaction();
             _withdrawalService.Execute(accountNumber, amount);
+            Commit();
         }
 
         public void Execute(int accountNumber)

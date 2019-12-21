@@ -6,6 +6,9 @@ namespace MB.Domain.ValueObjects
 {
     public struct Currency
     {
+        /// <summary>
+        /// Código da Moeda
+        /// </summary>
         public string Code { get ; set; }
 
         public Currency(string code)

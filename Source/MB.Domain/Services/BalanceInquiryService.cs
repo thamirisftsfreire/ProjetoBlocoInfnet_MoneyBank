@@ -14,11 +14,18 @@ namespace MB.Domain.Services
         {
             _bankDatabaseService = bankDatabaseService;
         }
+        /// <summary>
+        /// Retorna o saldo total da conta
+        /// REQ002_Visualizar Saldo da Conta 
+        /// Repositório: \ProjetoBlocoInfnet_MoneyBank\Documentos\
+        /// </summary>
         public Amount Execute(int accountNumber)
         {
             return _bankDatabaseService.GetTotalBalance(accountNumber);
         }
-
+        /// <summary>
+        /// Não implementado
+        /// </summary>
         public void Execute(int accountNumber, Amount amount)
         {
             throw new NotImplementedException();

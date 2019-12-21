@@ -18,7 +18,9 @@ namespace MB.Application.AccountAppServices
         }
         public void Execute(int accountNumber)
         {
+            BeginTransaction();
             _balanceInquiryService.Execute(accountNumber);
+            Commit();
         }
 
         public void Execute(int accountNumber, Amount amount)

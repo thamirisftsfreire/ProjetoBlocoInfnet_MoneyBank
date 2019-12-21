@@ -18,8 +18,9 @@ namespace MB.Domain.Services
         }
         /// <summary>
         /// Retorna o saldo disponível na conta.
+        /// Método complementar para o REQ002_Visualizar Saldo da Conta 
+        /// Repositório: \ProjetoBlocoInfnet_MoneyBank\Documentos\
         /// </summary>
-        /// <returns></returns>
         Amount IAccountService.GetAvailableBalance(int accountId) 
         {
             var _account = _accountRepository.FindAsync(accountId).Result;
@@ -31,8 +32,9 @@ namespace MB.Domain.Services
         }
         /// <summary>
         /// Retorna o saldo total da conta
+        /// Método complementar para o REQ002_Visualizar Saldo da Conta 
+        /// Repositório: \ProjetoBlocoInfnet_MoneyBank\Documentos\
         /// </summary>
-        /// <returns></returns>
         Amount IAccountService.GetTotalBalance(int accountId)
         {
             var _account = _accountRepository.FindAsync(accountId).Result;
@@ -44,6 +46,8 @@ namespace MB.Domain.Services
         }
         /// <summary>
         /// Credita uma quantia na conta especificada
+        /// Método complementar para o REQ004_Depositar Dinheiro na Conta
+        /// Repositório: \ProjetoBlocoInfnet_MoneyBank\Documentos\
         /// </summary>
         void IAccountService.Credit(int accountId, Decimal ValorCredito) 
         {
@@ -57,6 +61,8 @@ namespace MB.Domain.Services
         }
         /// <summary>
         /// Debita uma quantia na conta especificada
+        /// Método complementar para o REQ003_Sacar Dinheiro da Conta
+        /// Repositório: \ProjetoBlocoInfnet_MoneyBank\Documentos\
         /// </summary>
         void IAccountService.Debit(int accountId, Decimal ValorDebito) 
         {
@@ -67,7 +73,6 @@ namespace MB.Domain.Services
         /// <summary>
         /// retorna o número da conta
         /// </summary>
-        /// <returns></returns>
         int IAccountService.GetAccountNumber(int accountId) 
         {
             var account = _accountRepository.FindAsync(accountId);
@@ -75,7 +80,10 @@ namespace MB.Domain.Services
                 throw new Exception("No record found for given parameters");
             return account.Result.Id;
         }
-
+        /// <summary>
+        /// Método complementar para o REQ001_Autenticar Usuário 
+        /// Repositório: \ProjetoBlocoInfnet_MoneyBank\Documentos\
+        /// </summary>
         public Boolean ValidatePIN(Account account)
         {
             return new AuthenticationValidation(_accountRepository).IsSatisfiedBy(account);

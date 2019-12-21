@@ -7,6 +7,9 @@ namespace MB.Domain.Interfaces.Repository
 {
     public interface IRepository<TEntity> where TEntity : BaseEntity<int>
     {
+        /// <summary>
+        /// Repositório com CRUD recebendo e retornando objeto genérico.
+        /// </summary>
         Task<TEntity> AddAsync(TEntity tEntity);
         Task<TEntity> FindAsync(int id);
         Task<IEnumerable<TEntity>> GetAllAsNoTrackingAsync();

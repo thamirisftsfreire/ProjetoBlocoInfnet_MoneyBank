@@ -6,7 +6,13 @@ namespace MB.Domain.ValueObjects
 {
     public struct Amount
     { 
+        /// <summary>
+        /// Moeda corrente
+        /// </summary>
         public Currency Currency { get; set; }
+        /// <summary>
+        /// Valor
+        /// </summary>
         public Decimal Value { get; set; }
 
         public static readonly Amount MinValue = new Amount() { Value = Decimal.MinValue };       

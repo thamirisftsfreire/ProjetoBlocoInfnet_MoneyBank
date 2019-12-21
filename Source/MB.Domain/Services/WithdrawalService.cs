@@ -18,6 +18,11 @@ namespace MB.Domain.Services
             _bankDatabaseService = bankDatabaseService;
             _accountRepository = accountRepository;
         }
+        /// <summary>
+        /// Credita uma quantia na conta especificada
+        /// REQ004_Depositar Dinheiro na Conta
+        /// Repositório: \ProjetoBlocoInfnet_MoneyBank\Documentos\
+        /// </summary>
         public void Execute(int accountNumber, Amount amount)
         {
             var resultAccount = _accountRepository.FindAsync(accountNumber).Result;
@@ -34,7 +39,9 @@ namespace MB.Domain.Services
                 throw new Exception("Invalid Account.");
             }   
         }
-
+        /// <summary>
+        /// Não implementado
+        /// </summary>
         public Amount Execute(int accountNumber)
         {
             throw new NotImplementedException();

@@ -14,6 +14,10 @@ namespace MB.Domain.Services
         {
 
         }
+        /// <summary>
+        /// REQ001_Autenticar Usuário 
+        /// Repositório: \ProjetoBlocoInfnet_MoneyBank\Documentos\
+        /// </summary>
         public Boolean AuthenticateUser(Account account)
         {
             return ValidatePIN(account);

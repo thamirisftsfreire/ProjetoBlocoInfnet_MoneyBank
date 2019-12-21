@@ -14,6 +14,11 @@ namespace MB.Domain.Specifications
         {
             _accountRepository = accountRepository;
         }
+        /// <summary>
+        /// UC003 – Sacar Dinheiro da Conta
+        /// Fluxo de Exceção 02 - Saldo de Conta insuficiente para saque
+        /// Repositório: \ProjetoBlocoInfnet_MoneyBank\Documentos\Caso_Uso
+        /// </summary>
         public bool IsSatisfiedBy(int accountNumber, Amount withdrawalAmount)
         {
             var _account = _accountRepository.FindAsync(accountNumber).Result;
