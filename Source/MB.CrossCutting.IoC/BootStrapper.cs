@@ -23,13 +23,14 @@ namespace MB.CrossCutting.IoC
 
             // App
             container.Register<ATMViewModel>(Lifestyle.Scoped);
-            container.Register<CashDispenserViewModel>(Lifestyle.Scoped);
             container.Register<DepositSlotViewModel>(Lifestyle.Scoped);
             container.Register<KeypadViewModel>(Lifestyle.Scoped);
             container.Register<ScreenViewModel>(Lifestyle.Scoped);
             container.Register<IBalanceInquiryAppService, BalanceInquiryAppService>(Lifestyle.Scoped);
             container.Register<IDepositAppService, DepositAppService>(Lifestyle.Scoped);
             container.Register<IWithdrawalAppService, WithdrawalAppService>(Lifestyle.Scoped);
+            container.Register<ICashDispenserAppService, CashDispenserAppService>(Lifestyle.Scoped);
+            
 
             // Domain
             container.Register<Account>(Lifestyle.Scoped);

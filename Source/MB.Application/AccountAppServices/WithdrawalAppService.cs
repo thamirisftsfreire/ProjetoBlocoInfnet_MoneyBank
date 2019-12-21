@@ -13,10 +13,13 @@ namespace MB.Application.AccountAppServices
     {
         private readonly IWithdrawalService _withdrawalService;
         private readonly ICashDispenserAppService _cashDispenserAppService;
-        public WithdrawalAppService(IWithdrawalService withdrawalService, IUnitOfWork uow)
+        public WithdrawalAppService(IWithdrawalService withdrawalService,
+            ICashDispenserAppService cashDispenserAppService,
+            IUnitOfWork uow)
             : base(uow)
         {
             _withdrawalService = withdrawalService;
+            _cashDispenserAppService = cashDispenserAppService;
         }
         public void Execute(int accountNumber, Amount amount)
         {

@@ -1,4 +1,5 @@
-﻿using MB.Domain.Interfaces.Specification;
+﻿using MB.Application.Interfaces;
+using MB.Domain.Interfaces.Specification;
 using MB.Domain.ValueObjects;
 using System;
 using System.Collections.Generic;
@@ -6,7 +7,7 @@ using System.Text;
 
 namespace MB.Application.AccountAppServices
 {
-    public class CashDispenserAppService
+    public class CashDispenserAppService : ICashDispenserAppService
     {
         private readonly IWithdrawalMustBeLessThanAvailableCashDispenser
             _withdrawalMustBeLessThanAvailableCash;
